@@ -9,4 +9,4 @@ import { ColorComponent } from './color';
   imports: [BrowserModule, FormsModule],
   bootstrap: [ColorComponent]
 })
-export class AppModule { }
+export class AppModule {}
