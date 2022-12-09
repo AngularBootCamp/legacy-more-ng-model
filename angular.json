@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "defaultProject": "legacy-more-ng-model",
   "newProjectRoot": "projects",
   "projects": {
     "legacy-more-ng-model": {
