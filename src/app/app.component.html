@@ -1,4 +1,4 @@
-<h4>Hello, my favorite color is {{favoriteColor}}.</h4>
+<h4>Hello, my favorite color is {{ favoriteColor }}.</h4>
 
 <div class="three-across">
   <section class="card">
@@ -24,7 +24,7 @@
       <div class="card-title">Select: with NgFor</div>
       <select [(ngModel)]="favoriteColor">
         <option *ngFor="let item of colors" [value]="item.code">
-          {{item.display}}
+          {{ item.display }}
         </option>
       </select>
     </div>
@@ -91,7 +91,7 @@
     <div class="card-content">
       <div class="card-title">Color Swatch</div>
       <div
-        [style.opacity]="show ? 1:0"
+        [style.opacity]="show ? 1 : 0"
         style="width: 100px; height: 100px"
         [style.background-color]="favoriteColor"
       ></div>

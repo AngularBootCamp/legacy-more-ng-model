@@ -7,9 +7,9 @@ interface IColor {
 
 @Component({
   selector: 'app-root',
-  templateUrl: './color.html'
+  templateUrl: './app.component.html'
 })
-export class ColorComponent {
+export class AppComponent {
   colors: IColor[];
   version = 'Beta';
   person = '';
