@@ -15,11 +15,13 @@
   </article>
 
   <article>
-    <header>Select: with NgFor</header>
+    <header>Select: with For loop</header>
     <select [(ngModel)]="favoriteColor">
-      <option *ngFor="let item of colors" [value]="item.code">
-        {{ item.display }}
-      </option>
+      @for (item of colors; track item) {
+        <option [value]="item.code">
+          {{ item.display }}
+        </option>
+      }
     </select>
   </article>
 
@@ -73,7 +75,9 @@
       <input id="9" type="checkbox" [(ngModel)]="show" />
       <label for="9">Show/Hide</label>
     </p>
-    <div *ngIf="show">Tada!</div>
+    @if (show) {
+      <div>Tada!</div>
+    }
   </article>
 
   <article>
